@@ -254,6 +254,24 @@
   .edu-card .desc{ color:var(--ink-soft); font-size:.9rem; }
   @media(max-width:600px){ .edu-card{ flex-direction:column; } }
 
+  /* publications */
+  .pub-card{
+    background:#fff; border:1px solid var(--line); border-radius:14px;
+    padding:24px 26px; margin-bottom:16px;
+    display:flex; gap:20px; align-items:flex-start;
+  }
+  .pub-card i{ color:var(--teal); font-size:1.15rem; margin-top:4px; }
+  .pub-card h4{ font-size:1.03rem; margin-bottom:6px; line-height:1.35; }
+  .pub-meta{ color:var(--ink-soft); font-size:.86rem; margin-bottom:8px; }
+  .pub-meta b{ color:var(--ink); font-weight:600; }
+  .pub-links{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+  .pub-links a{
+    font-family:'JetBrains Mono',monospace; font-size:.78rem; font-weight:600;
+    color:var(--cobalt); display:inline-flex; align-items:center; gap:6px;
+  }
+  .pub-links a:hover{ color:var(--cobalt-dark); }
+  @media(max-width:600px){ .pub-card{ flex-direction:column; } }
+
   /* skills */
   .skills-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
   .skill-card{
@@ -356,6 +374,7 @@
     <ul class="navlinks" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
+      <li><a href="#publications">Publications</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -408,7 +427,7 @@
       <div class="stat-stack">
         <div class="stat"><div class="num">10+</div><div class="lbl">Academic &amp; freelance projects delivered</div></div>
         <div class="stat"><div class="num">1st</div><div class="lbl">Place — AI in Healthcare Hackathon, 2026</div></div>
-        <div class="stat"><div class="num">1</div><div class="lbl">Published research paper, WEFER 2025</div></div>
+        <div class="stat"><div class="num">3</div><div class="lbl">Published research papers, 2025–2026</div></div>
       </div>
     </div>
   </div>
@@ -428,9 +447,9 @@
       <div class="banner-item">
         <i class="fas fa-file-alt"></i>
         <div>
-          <span class="tag">Publication · 2025</span>
-          <h4>Multi-Dimensional Predictive Modeling Framework for Educational Performance</h4>
-          <p>A cross-cultural analysis published in WEFER, applying predictive modelling to educational outcomes.</p>
+          <span class="tag">Research · 2025–2026</span>
+          <h4>3 Published Research Papers</h4>
+          <p>Spanning educational data science, quantum-classical deep learning, and medical imaging — see the <a href="#publications" style="color:var(--teal); font-weight:600;">full list below</a>.</p>
         </div>
       </div>
     </div>
@@ -457,6 +476,51 @@
         <h4>B.Sc. Computer Science — CGPA 8.018</h4>
         <div class="school">Naipunnya School of Management, Kerala, India (Affiliated to Kerala University)</div>
         <div class="desc">Strong foundation in programming, algorithms, database systems, and web technologies.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Publications</span>
+      <h2>Research output</h2>
+      <p>Peer-reviewed work spanning predictive modelling, quantum-classical deep learning, and medical image analysis.</p>
+    </div>
+
+    <div class="pub-card">
+      <i class="fas fa-file-alt"></i>
+      <div>
+        <h4>Multi-Dimensional Predictive Modeling Framework for Educational Performance: A Cross-Cultural Analysis</h4>
+        <div class="pub-meta"><b>WEFER</b> · 2025</div>
+        <div class="pub-links">
+          <span class="tag">Predictive Modelling</span><span class="tag">Education Data</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-card">
+      <i class="fas fa-file-alt"></i>
+      <div>
+        <h4>Hybrid Quantum–Classical Convolutional Neural Network for Medical Image Classification</h4>
+        <div class="pub-meta"><b>International Research Journal on Advanced Engineering and Management (IRJAEM)</b> · 4(05):1220–1227 · May 2026</div>
+        <div class="pub-links">
+          <a href="https://doi.org/10.47392/IRJAEM.2026.0183" target="_blank" rel="noopener"><i class="fas fa-link"></i>DOI: 10.47392/IRJAEM.2026.0183</a>
+          <span class="tag">Quantum ML</span><span class="tag">CNN</span><span class="tag">Medical Imaging</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-card">
+      <i class="fas fa-file-alt"></i>
+      <div>
+        <h4>An Attention-Enhanced CNN Model for Early Lung Cancer Detection Using CT Imaging</h4>
+        <div class="pub-meta"><b>International Journal For Multidisciplinary Research (IJFMR)</b> · 8(3) · May 2026</div>
+        <div class="pub-links">
+          <a href="https://doi.org/10.36948/ijfmr.2026.v08i03.78009" target="_blank" rel="noopener"><i class="fas fa-link"></i>DOI: 10.36948/ijfmr.2026.v08i03.78009</a>
+          <span class="tag">Attention Networks</span><span class="tag">CNN</span><span class="tag">Medical Imaging</span>
+        </div>
       </div>
     </div>
   </div>
